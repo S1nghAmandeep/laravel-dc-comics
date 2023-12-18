@@ -36,14 +36,26 @@ img {
         object-position: top;
     }
 
-    .detail {
-        background-color: rgb(0, 145, 255);
-        padding: 40px 0;
-        margin-top: 20px;
+}
 
-        .detail-img {
-            width: 50px;
-            padding-right: 10px;
-        }
+.detail {
+    background-color: rgb(0, 145, 255);
+    padding: 40px 0;
+    margin-top: 20px;
+
+    .detail-img {
+        width: 50px;
+        padding-right: 10px;
+    }
+}
+
+.single-comic {
+    position: relative;
+
+    .comic-thumb {
+        width: 150px;
+        position: absolute;
+        top: -190px;
+        left: 100px;
     }
 }
