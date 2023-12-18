@@ -14,10 +14,10 @@ Laravel Comics
         </div>
         <div class="d-flex flex-column align-items-center">
             <div class="row row-gap-5">
-                @foreach ($comics as $item)
+                @foreach ($comics as $comic)
                 <div class="col-2">
-                    <img class="thumb" src="{{$item['thumb']}}" alt="">
-                    <h6 class="pt-2 text-light">{{$item['series']}}</h6>
+                    <img class="thumb" src="{{$comic['thumb']}}" alt="">
+                    <a href="{{ route('comics.show', $comic) }}"><h6 class="pt-2 text-light">{{$comic['series']}}</h6></a>
                 </div>
                 @endforeach
             </div>
