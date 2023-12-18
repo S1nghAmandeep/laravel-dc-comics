@@ -17,7 +17,7 @@
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Image (url)</label>
-          <input type="text" class="form-control" name="thumb" id="image" placeholder="Url image">
+          <input type="url" class="form-control" name="thumb" id="image" placeholder="Url image">
         </div>
         <div class="mb-3">
           <label for="series" class="form-label">Series</label>
@@ -26,7 +26,7 @@
   
         <div class="mb-3">
           <label for="sale_date" class="form-label">Sale_date</label>
-          <input type="number" class="form-control" name="sale_date" id="sale_date" placeholder="Giorno di vendita">
+          <input type="date" class="form-control" name="sale_date" id="sale_date" placeholder="Giorno di vendita">
         </div>
   
         <div class="mb-3">
