@@ -21,7 +21,10 @@ Laravel Comics
                 </div>
                 @endforeach
             </div>
-            <button class="btn btn-primary mt-4 text-uppercase">Load more</button>
+            <form action="{{ route('comics.create') }}">
+            <button class="btn btn-primary mt-4 text-uppercase">Create</button>
+
+            </form>
         </div>
     </div>
     <div class="detail pt-5">
