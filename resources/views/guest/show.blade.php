@@ -19,6 +19,12 @@
     <div>
         <img class="comic-thumb" src="{{ $comic['thumb'] }}" alt="">
     </div>
+    <div class="container">
+      <form action="{{route('comics.edit', $comic)}}">
+      <button class="btn btn-primary">Edit</button>
+
+      </form>
+    </div>
     <div class="detail pt-5">
         <div class="container">
             <div class="row">
