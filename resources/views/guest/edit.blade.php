@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Image (url)</label>
-          <input type="url" class="form-control" name="thumb" id="image" placeholder="Url image" value="{{ $comic->url }}">
+          <input type="url" class="form-control" name="thumb" id="image" placeholder="Url image" value="{{ $comic->thumb }}">
         </div>
         <div class="mb-3">
           <label for="series" class="form-label">Series</label>
@@ -37,11 +37,11 @@
 
         <div class="mb-3">
           <label for="description" class="form-label">Descrizione</label>
-          <textarea class="form-control" name="description" id="description" rows="3" placeholder="Descrivi il comic" value="{{ $comic->description }}"></textarea>
+          <textarea class="form-control" name="description" id="description" rows="3" placeholder="Descrivi il comic">{{ $comic['description'] }}</textarea>
         </div>
   
         <div class="">
-          <input type="submit" class="btn btn-primary" value="Edit">
+          <input type="submit" class="btn btn-primary" value="Save">
         </div>
   
       </form>
