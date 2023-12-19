@@ -28,3 +28,6 @@ Route::post('/', [ComicController::class, 'store'])
 
 Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])
     ->name('comics.edit');
+
+Route::put('/comics/{comic}', [ComicController::class, 'update'])
+    ->name('comics.update');
