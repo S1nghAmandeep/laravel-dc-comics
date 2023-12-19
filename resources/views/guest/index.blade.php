@@ -16,8 +16,8 @@ Laravel Comics
             <div class="row row-gap-5">
                 @foreach ($comics as $comic)
                 <div class="col-2">
-                    <img class="thumb" src="{{$comic['thumb']}}" alt="">
-                    <a href="{{ route('comics.show', $comic) }}"><h6 class="pt-2 text-light">{{$comic['series']}}</h6></a>
+                    <img class="thumb" src="{{$comic->thumb}}" alt="">
+                    <a href="{{ route('comics.show', $comic) }}"><h6 class="pt-2 text-light">{{ $comic->series }}</h6></a>
                 </div>
                 @endforeach
             </div>

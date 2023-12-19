@@ -1,14 +1,14 @@
 @extends('layout.app')
 
 @section('content')
-    
+
   <section class="py-5 pb-0 single-comic">
     <div class="container">
       <div class="d-flex justify-content-between py-5">
         <div class="col-8">
-            <h1>{{ $comic['title'] }}</h1>
+            <h1>{{ $comic->title }}</h1>
           <p>
-            {{ $comic['description'] }}
+            {{ $comic->description }}
           </p>
           </div>
           <div class="col-4">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div>
-        <img class="comic-thumb" src="{{ $comic['thumb'] }}" alt="">
+        <img class="comic-thumb" src="{{ $comic->thumb }}" alt="">
     </div>
     <div class="container d-flex gap-3">
       <form action="{{route('comics.edit', $comic)}}">
@@ -75,10 +75,10 @@
     const noBtnDomEl = document.getElementById("noBtn");
 
 
-    console.log(formDomEl);
+    // console.log(formDomEl);
 
     deleteDomEl.addEventListener('click', function () {
-        console.log('delete');
+        // console.log('delete');
       formDomEl.classList.add("active")
     })
 
