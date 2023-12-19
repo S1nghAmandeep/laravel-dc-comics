@@ -10,7 +10,7 @@
   
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
-          <input type="text" class="form-control" name="title" id="title" placeholder="Titolo" value="{{ $comic['title'] }}">
+          <input type="text" class="form-control" name="title" id="title" placeholder="Titolo" value="{{ $comic->title }}">
         </div>
         <div class="mb-3">
           <label for="type" class="form-label">Tipologia</label>
@@ -37,7 +37,7 @@
 
         <div class="mb-3">
           <label for="description" class="form-label">Descrizione</label>
-          <textarea class="form-control" name="description" id="description" rows="3" placeholder="Descrivi il comic">{{ $comic['description'] }}</textarea>
+          <textarea class="form-control" name="description" id="description" rows="3" placeholder="Descrivi il comic">{{ $comic->description }}</textarea>
         </div>
   
         <div class="">
