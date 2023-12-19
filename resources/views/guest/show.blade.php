@@ -8,7 +8,7 @@
         <div class="col-8">
             <h1>{{ $comic['title'] }}</h1>
           <p>
-            {{ $comic['description'] }}
+            {{!! $comic['description'] !!}}
           </p>
           </div>
           <div class="col-4">
@@ -19,10 +19,17 @@
     <div>
         <img class="comic-thumb" src="{{ $comic['thumb'] }}" alt="">
     </div>
-    <div class="container">
+    <div class="container d-flex gap-3">
       <form action="{{route('comics.edit', $comic)}}">
-      <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-primary">Edit</button>
+      </form>
+      <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+        
+        @csrf
+        @method('DELETE')
 
+
+        <button class="btn btn-danger">Delete</button>
       </form>
     </div>
     <div class="detail pt-5">
