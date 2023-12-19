@@ -4,7 +4,7 @@
             <ul class="nav-bar">
                 <li><img class="logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt=""></li>
                 <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
+                <li><a href={{ route('index') }}>Comics</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Tv</a></li>
                 <li><a href="#">Games</a></li>
