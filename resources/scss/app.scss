@@ -6,6 +6,16 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+    &:hover {
+        color: blue;
+    }
+}
+
 .hero {
 
     .hero-img {
