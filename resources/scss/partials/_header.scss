@@ -19,6 +19,10 @@ header {
             text-decoration: none;
             color: black;
             font-size: 14px;
+
+            &:hover {
+                color: blue;
+            }
         }
 
         input {
