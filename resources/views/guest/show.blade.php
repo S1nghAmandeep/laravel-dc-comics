@@ -8,7 +8,7 @@
         <div class="col-8">
             <h1>{{ $comic['title'] }}</h1>
           <p>
-            {{!! $comic['description'] !!}}
+            {{ $comic['description'] }}
           </p>
           </div>
           <div class="col-4">
@@ -23,14 +23,24 @@
       <form action="{{route('comics.edit', $comic)}}">
         <button class="btn btn-primary">Edit</button>
       </form>
-      <form action="{{ route('comics.destroy', $comic) }}" method="POST">
-        
-        @csrf
-        @method('DELETE')
+        <button id="myBtn" class="btn btn-danger delete">Delete</button>
+        {{-- <button id="myBtn" class="btn btn-danger delete">prova</button> --}}
+    </div>
 
+    {{-- form per la conferma di elimina del comic --}}
+    <div id="bgForm" class="bg-form">
+      <div class="d-flex gap-3 delete-form">
+        <form action="{{ route('comics.destroy', $comic) }}" method="POST">
 
-        <button class="btn btn-danger">Delete</button>
-      </form>
+          @csrf
+          @method('DELETE')
+
+          <button class="btn btn-danger">Si</button>
+        </form>
+        <form action="">
+          <button class="btn btn-primary">No</button>
+        </form>
+    </div>
     </div>
     <div class="detail pt-5">
         <div class="container">
@@ -59,5 +69,21 @@
         </div>
     </div>
   </section>
+
+  <script>
+    
+    const deleteDomEl = document.getElementById("myBtn");
+    const formDomEl = document.getElementById("bgForm");
+
+
+    console.log(formDomEl);
+
+    deleteDomEl.addEventListener('click', function () {
+        console.log('delete');
+      formDomEl.classList.add("active")
+    })
+
+
+  </script>
 
 @endsection
