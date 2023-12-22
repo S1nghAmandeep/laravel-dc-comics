@@ -35,9 +35,9 @@
           @csrf
           @method('DELETE')
 
-          <button class="btn btn-danger">Si</button>
+          <button class="btn btn-danger btn-lg">Si</button>
         </form>
-          <button id="noBtn" class="btn btn-primary">No</button>
+          <button id="noBtn" class="btn btn-primary btn-lg">No</button>
     </div>
     </div>
     <div class="detail pt-5">
